@@ -1,0 +1,43 @@
+# Terraform files
+.terraform/
+.terraform/**
+../terraform/**/*
+.terraformrc
+*.tfstate
+*.tfstate.*.backup
+crash.log
+*.tfvars
+*.tfvars.json
+override.tf
+override_*.tf
+*_override.tf
+# Local .terraform directories
+**/.terraform/*
+
+# Ignore variables files
+*.auto.tfvars
+
+# Ignore override files
+*.tfoverride
+
+# Ignore environment-specific files
+.envrc
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+# Local Terraform CLI configuration files
+# (e.g., used for local testing or specific environments)
+.terraform.d/
+
+# Provider-specific files (if applicable)
+# Example for a specific provider, adjust as needed:
+# .terraform/providers/registry.terraform.io/hashicorp/aws/*/terraform-provider-aws*
+
+# Terraform plan files (if you save plans locally)
+*.tfplan
+
+# Sensitive files (if not managed by a secrets manager)
+# Consider using a secrets manager instead of ignoring these if they contain sensitive data.
+# For example, if you have a file named `secrets.tfvars`:
+# secrets.tfvars
